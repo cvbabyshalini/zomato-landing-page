@@ -29,6 +29,8 @@ rel="stylesheet"
         <section class="hero__container">
             <div class="hero__image__container">
                 <img class="hero__image" src="./assets/hero.jpg" alt="hero image" />
+                <img class="hero__bg__shape" src="./assets/svg/heroShape.svg" alt="hero bg shape"/>
+                <img class="hero__bg__pattern" src="./assets/svg/herobgpattren.svg" alt="hero bg pattern" />
             </div>
             <div class="hero__description">
                 <h1 class="hero__text">
@@ -42,12 +44,13 @@ rel="stylesheet"
         <!--  explore menu  -->
         <section class="explore__menu__container">
             <h1 class="explore__menu__text"> Explore Our Menu </h1>
+            <div class="explore__menu__gradient__bg"></div>
             <div class="explore__menu__lists">
                 <!--Burger-->
                 <div class="food__menu__card">
                     <img src="./assets/burger.jpg" alt="burger" class="food__image"/>
                      <div class="food__menu__card__description">
-                        <h3 class="food__title"></h3>
+                        <h3 class="food__title">Burgers</h3>
                         <p class="food__restaurants">
                             Burger King, Mcdonalds, Burger Place
                             <span style="color: red"> +3</span>
@@ -58,7 +61,7 @@ rel="stylesheet"
                 <div class="food__menu__card" id="pizza__card">
                     <img src="./assets/pizza.jpg" alt="burger" class="food__image"/>
                      <div class="food__menu__card__description">
-                        <h3 class="food__title"></h3>
+                        <h3 class="food__title">Pizza</h3>
                         <p class="food__restaurants">
                             Pizza Hut, Domino's Pizza
                             <span style="color: red"> +3</span>
@@ -69,7 +72,7 @@ rel="stylesheet"
                 <div class="food__menu__card">
                     <img src="./assets/iceCream.jpg" alt="burger" class="food__image"/>
                      <div class="food__menu__card__description">
-                        <h3 class="food__title"></h3>
+                        <h3 class="food__title">Ice Creams</h3>
                         <p class="food__restaurants">
                             Baskin Robins, Ibaco
                             <span style="color: red"> +3</span>
@@ -79,6 +82,52 @@ rel="stylesheet"
             </div>
             <div class="explore__menu__view__more">
                 <button class="button__primary">View More</button>
+            </div>
+        </section>
+
+        <!-- Restaurants -->
+        <section class="restaurants__container">
+            <h1 class="restaurants__description">Order From 100s of restaurants</h1>
+            <div class="restaurants__flex">
+                <div class="restaurants__flex__row__one">
+                    <div class="restaurant__1">
+                        <img class="restaurant__1__image" 
+                             src="./assets/restaurant1.jpg" 
+                             alt="restaurant__1"
+                        />
+                    </div>
+                    <div class="restaurant__2">
+                        <img class="restaurant__2__image" 
+                             src="./assets/restaurant2.jpg" 
+                             alt="restaurant__2"
+                        />
+                    </div>
+                </div>
+                <div class="restaurants__flex__row__two">
+                    <div class="restaurant__3">
+                        <img class="restaurant__3__image" 
+                             src="./assets/restaurant3.jpg" 
+                             alt="restaurant__3"
+                        />
+                    </div>
+                    <div class="restaurant__4">
+                        <img class="restaurant__4__image" 
+                             src="./assets/restaurant4.jpg" 
+                             alt="restaurant__4"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--get updates-->
+        <section class="get__updates__container">
+            <div class="get__updates">
+                 <h1 class="updates__text">Stay Updated</h1>
+                 <span class="updates__flex">
+                    <input class="updates__email__input" type="email" placeholder="email@email.com"/>
+                    <button class="button__primary" id="updates_button">Get Updates</button>
+                 </span>
             </div>
         </section>
     </main>
