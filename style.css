@@ -9,6 +9,7 @@ body{
     font-family: "Merriweather",sans-serif;
     background-color: #ebf2ff;
     overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .button__primary{
@@ -23,19 +24,30 @@ body{
      border: none;
      border-radius: 6px ;
      cursor: pointer;
-
 }
+.button__primary:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 
 .container{
     width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .navbar{
     display: flex;
+    top: 0;
     justify-content: space-around;
     align-items: center;
+    background-color: #f9fafc;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 2px 2px -2px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
 }
 
 .navbar__brand{
@@ -50,23 +62,65 @@ body{
     width: 100%;
 }
 .hero__image__container{
+    margin-top: 2rem;
     width: 100%;
     position: relative;
     margin-bottom: -30px;
 }
 .hero__bg__shape{
     position: absolute;
-    z-index: -1;
+    right: 2;
 }
 .hero__image{
      width: 100%;
      position: absolute;
+     right: auto;
+     left: auto;
+     z-index: 2;
+     border-radius: 6px;
+     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 .hero__text{
     font-size: 30px;
     font-weight: bold;
     color: #1d3557;
     margin: 20px 0;
+}
+
+/* video styles */
+.video__footage__container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.video__footage{
+    position: relative;
+}
+.video__footage::before{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(1rem, 1rem);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.video__footage__text{
+    margin-top: 2rem;
+    color: #1d3557;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
 }
 
 /* menu styles */
@@ -86,10 +140,17 @@ body{
     background-color: #fff;
     border-radius: 8px;
     margin-bottom: 15px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 .food__image{
     width: 100%;
     border-radius: 8px 8px 0 0;
+}
+.food__title{
+    color: #1d3557;
+}
+.food__restaurants{
+    color: #1d3557;
 }
 .food__menu__card__description{
     padding: 20px;
@@ -138,25 +199,99 @@ body{
   height: 200px;
 }
 
-/*Get Updates */
-.updates__text{
+/* Stay Updated Style */
+.stay__updated__container{
+    margin-top: 3rem;
+    width: 100%;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.stay__updated__text{
     font-size: 30px;
     font-weight: bolder;
     color: #1d3557;
     margin: 20px 0;
+}
+.email__subcribe__input__field {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .email__input {
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .email__input::placeholder {
+    color: #bdbcbc;
+  }
+
+  /* Quote Container Style */
+  .quote__container {
+    position: relative;
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+      center center / cover no-repeat;
+      margin-bottom: 4rem;
+  }
+  .quote_image_overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  .quote_image_text {
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
     text-align: center;
-}
-.updates__flex{
-    gap: 1px;
-}
-.updates__email__input{
-    background-color: #FFD5CD;
-    border-radius: 1ex;
-    padding: 1ch;
-    font-weight: 600;
-    border: solid rgb(253, 87, 112);
-    font-size: auto;
-}
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+  }
+  
+  footer > img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+  }
+  
+  footer > ul {
+    margin-top: -1rem;
+    color: #fff;
+  }
+  
+  footer > ul > li {
+    margin: 5px 0;
+  }
+
 
 @media (min-width: 768px){
      .navbar{
@@ -165,7 +300,7 @@ body{
 
      }
      .navbar__brand{
-         width: 150px;
+         width: 100px;
      }
      .button__primary{
          padding: 12px 20px;
@@ -180,6 +315,18 @@ body{
      }
      .hero__image{
          top: 30px;
+     }
+     .video__footage__container{
+         margin-bottom: 5rem;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     .video__footage{
+         margin-right: 2rem;
+     }
+     .video__footage__text{
+         margin-left: 2rem;
      }
      .explore__menu__container{
          position: relative;
@@ -224,14 +371,33 @@ body{
      .restaurants__flex{
          width: 100%;
      }
-     .updates__flex{
-         margin-left: 100px;
-         gap: 5px;
+     .stay__updated__container{
+         display: flex;
+         justify-content: center;
      }
-     .updates__email__input{
-         padding: 10px;
-         width: 50%;
+     .email__input{
+         width: 20rem;
      }
+     .quote__container{
+         height: 300px;
+         width: 100%;
+     }
+     .quote_image_overlay{
+         height: 300px;
+         width: 100%;
+     }
+     .quote_image_text{
+         font-size: 2rem;
+         font-weight: 500;
+         line-height: 1.2;
+     }
+     footer {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    
 }
 
 @media (min-width: 1020px){
@@ -244,6 +410,13 @@ body{
     .hero__image{
         top: 50px;
     }
+    .video__footage__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .video__footage__text {
+        width: 60%;
+    }
     .explore__menu__lists{
         gap: 20px;
         padding: 0 20px;
@@ -253,16 +426,8 @@ body{
     }
     .restaurants__container{
         margin-top: 30px;
-        margin-bottom: 50px;
     }
-    .updates__flex{
-        margin-left: 360px;
-        gap: 5px;
-    }
-    .updates__email__input{
-        padding: 10px;
-        width: 30%;
-    }
+    
 
 }
 

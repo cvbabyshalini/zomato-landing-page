@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link 
-href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&display=swap" 
-rel="stylesheet"
-/>
-<link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- Css File Link-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Zomato - Largest Food Delivery Network</title>
 </head>
+
 <body>
     <!--Navbar-->
     <header>
@@ -20,16 +23,16 @@ rel="stylesheet"
                 <img src="./assets/logo.png" alt="logo" class="navbar__logo" />
             </div>
             <div class="navbar__nav__items">
-               <button class="nav__item button__primary">Order Food</button>
+                <button class="nav__item button__primary">Order Food</button>
             </div>
         </nav>
     </header>
     <main class="container">
-       <!--  Hero Section  -->
+        <!--  Hero Section  -->
         <section class="hero__container">
             <div class="hero__image__container">
                 <img class="hero__image" src="./assets/hero.jpg" alt="hero image" />
-                <img class="hero__bg__shape" src="./assets/svg/heroShape.svg" alt="hero bg shape"/>
+                <img class="hero__bg__shape" src="./assets/svg/heroShape.svg" alt="hero bg shape" />
                 <img class="hero__bg__pattern" src="./assets/svg/herobgpattren.svg" alt="hero bg pattern" />
             </div>
             <div class="hero__description">
@@ -37,6 +40,21 @@ rel="stylesheet"
                     Order food from favourite restaurants near you.
                 </h1>
                 <button class="button__primary">Order now</button>
+            </div>
+        </section>
+
+        <!-- video footage -->
+        <section class="video__footage__container">
+            <div class="video__footage">
+                <iframe src="https://player.vimeo.com/video/323795266" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="chef__video">
+                </iframe>
+            </div>
+            <div class="video__footage__text">
+                <p>
+                    Your food will be prepared safely with an experienced chef, without
+                    compromising on the quality and hygiene.
+                </p>
             </div>
         </section>
 
@@ -48,36 +66,36 @@ rel="stylesheet"
             <div class="explore__menu__lists">
                 <!--Burger-->
                 <div class="food__menu__card">
-                    <img src="./assets/burger.jpg" alt="burger" class="food__image"/>
-                     <div class="food__menu__card__description">
-                        <h3 class="food__title">Burgers</h3>
+                    <img src="./assets/burger.jpg" alt="burger" class="food__image" />
+                    <div class="food__menu__card__description">
+                        <h3 class="food__title"><strong>Burgers</strong></h3>
                         <p class="food__restaurants">
                             Burger King, Mcdonalds, Burger Place
                             <span style="color: red"> +3</span>
                         </p>
-                     </div>
+                    </div>
                 </div>
                 <!--pizza-->
                 <div class="food__menu__card" id="pizza__card">
-                    <img src="./assets/pizza.jpg" alt="burger" class="food__image"/>
-                     <div class="food__menu__card__description">
-                        <h3 class="food__title">Pizza</h3>
+                    <img src="./assets/pizza.jpg" alt="burger" class="food__image" />
+                    <div class="food__menu__card__description">
+                        <h3 class="food__title"><strong>Pizza</strong></h3>
                         <p class="food__restaurants">
                             Pizza Hut, Domino's Pizza
                             <span style="color: red"> +3</span>
                         </p>
-                     </div>
+                    </div>
                 </div>
                 <!--ice cream-->
                 <div class="food__menu__card">
-                    <img src="./assets/iceCream.jpg" alt="burger" class="food__image"/>
-                     <div class="food__menu__card__description">
-                        <h3 class="food__title">Ice Creams</h3>
+                    <img src="./assets/iceCream.jpg" alt="burger" class="food__image" />
+                    <div class="food__menu__card__description">
+                        <h3 class="food__title"><strong>Ice Creams</strong></h3>
                         <p class="food__restaurants">
                             Baskin Robins, Ibaco
                             <span style="color: red"> +3</span>
                         </p>
-                     </div>
+                    </div>
                 </div>
             </div>
             <div class="explore__menu__view__more">
@@ -91,45 +109,53 @@ rel="stylesheet"
             <div class="restaurants__flex">
                 <div class="restaurants__flex__row__one">
                     <div class="restaurant__1">
-                        <img class="restaurant__1__image" 
-                             src="./assets/restaurant1.jpg" 
-                             alt="restaurant__1"
-                        />
+                        <img class="restaurant__1__image" src="./assets/restaurant1.jpg" alt="restaurant__1" />
                     </div>
                     <div class="restaurant__2">
-                        <img class="restaurant__2__image" 
-                             src="./assets/restaurant2.jpg" 
-                             alt="restaurant__2"
-                        />
+                        <img class="restaurant__2__image" src="./assets/restaurant2.jpg" alt="restaurant__2" />
                     </div>
                 </div>
                 <div class="restaurants__flex__row__two">
                     <div class="restaurant__3">
-                        <img class="restaurant__3__image" 
-                             src="./assets/restaurant3.jpg" 
-                             alt="restaurant__3"
-                        />
+                        <img class="restaurant__3__image" src="./assets/restaurant3.jpg" alt="restaurant__3" />
                     </div>
                     <div class="restaurant__4">
-                        <img class="restaurant__4__image" 
-                             src="./assets/restaurant4.jpg" 
-                             alt="restaurant__4"
-                        />
+                        <img class="restaurant__4__image" src="./assets/restaurant4.jpg" alt="restaurant__4" />
                     </div>
                 </div>
             </div>
         </section>
 
         <!--get updates-->
-        <section class="get__updates__container">
-            <div class="get__updates">
-                 <h1 class="updates__text">Stay Updated</h1>
-                 <span class="updates__flex">
-                    <input class="updates__email__input" type="email" placeholder="email@email.com"/>
-                    <button class="button__primary" id="updates_button">Get Updates</button>
-                 </span>
+        <section class="stay__updated__container">
+            <div>
+                <h1 class="stay__updated__text">Stay Updated</h1>
+                <span class="email__subsribe__input__field">
+                    <input type="email" placeholder="email@email.com" class="email__input" />
+                    <button class="button__primary">Get Updates</button>
+                </span>
             </div>
         </section>
+
+        <!-- Quote Container-->
+        <section class="quote__container">
+            <div class="quote_image_overlay"></div>
+            <h3 class="quote_image_text">
+                When a man's stomach is full it makes no difference whether he is rich
+                or poor.
+            </h3>
+        </section>
     </main>
+    <footer>
+        <img src="./assets/logo.png" alt="logo" />
+        <ul>
+            <li>Pricing</li>
+            <li>Terms and condition</li>
+            <li>Partnership</li>
+            <li>Career</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
 </body>
+
 </html>
